@@ -22,20 +22,14 @@ int main()
         y = x - exp(x);
     }
     else if (x >= 2 && x < 5 && x != 3) {
-        arcctg(x + sqrt(x) - 1.4);
+        y = arcctg(x + sqrt(x) - 1.4);
     } else {
         cout << "the value does not meet the condition" << endl;
+        goto exit;
     }
 
+
     cout << "Результат: y = " << y << endl;
+    exit:
     return 0;
 }
-
-
-
-
-// int main() {
-//     double x = 1.0;
-//     std::cout << "arcctg(" << x << ") = " << arcctg(x) << std::endl;
-//     return 0;
-// }
